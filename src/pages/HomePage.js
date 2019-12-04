@@ -8,7 +8,6 @@ import BrandTouchvpn from '../img/brand/touchvpn.webp';
 import BrandRush from '../img/brand/rush.webp';
 import BrandPass from '../img/brand/passwordgen.webp';
 import Guarantee from '../layouts/Guarantee';
-import PaymentModal from '../components/PaymentModal';
 
 export default function HomePage() {
   return (
@@ -27,6 +26,7 @@ export default function HomePage() {
           <div className='col-lg-4 col-md-8 mb-2'>
             <div className='card bg-dark'>
               <h1 className='text-price'>$199</h1>
+              <h1 className='text-price-cut'>$269</h1>
               <p className='text-flat-fee'>Flat fee</p>
               <div
                 className='btn-get-now-1 btn-get-now'
@@ -59,6 +59,7 @@ export default function HomePage() {
           <div className='col-lg-4 col-md-8 mb-2'>
             <div className='card bg-dark'>
               <h1 className='text-price'>$599</h1>
+              <h1 className='text-price-cut'>$769</h1>
               <p className='text-flat-fee'>Flat fee</p>
               <div
                 className='btn-get-now-2 btn-get-now'
@@ -77,9 +78,9 @@ export default function HomePage() {
                 <br />
                 ~ App Description Copywriting
                 <br />
-                ~ Submission to 5+ sites
+                ~ Submission to 10+ sites
                 <br />
-                ~ Guaranteed 10 App Reviews
+                ~ Guaranteed 25 App Reviews
                 <br />
                 ~ 1 Video Reviews/Demos
                 <br />
@@ -100,6 +101,7 @@ export default function HomePage() {
           <div className='col-lg-4 col-md-8'>
             <div className='card bg-dark'>
               <h1 className='text-price'>$999</h1>
+              <h1 className='text-price-cut'>$1,069</h1>
               <p className='text-flat-fee'>Flat fee</p>
               <div
                 className='btn-get-now-3 btn-get-now'
@@ -118,9 +120,9 @@ export default function HomePage() {
                 <br />
                 ~ Professional App Screenshot Design
                 <br />
-                ~ Guaranteed 25 App Reviews
+                ~ Guaranteed 45 App Reviews
                 <br />
-                ~ Submission to 20+ sites
+                ~ Submission to 25+ sites
                 <br />
                 ~ 2 Video Reviews/Demos
                 <br />
@@ -183,8 +185,9 @@ export default function HomePage() {
               Ranking
             </p>
             <p className='lead'>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
-              earum?
+              With complex Machine Learning Alorithms & leading analytical
+              tools, our team works on store Optimization for your App
+              constantly to see how the App ranks.
             </p>
           </div>
           <div className='col-lg-6 col-md-6'>
@@ -193,8 +196,9 @@ export default function HomePage() {
               Press Outreach for your App
             </p>
             <p className='lead'>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
-              earum?
+              Our clients have already been featured on TechCrunch, CNN,
+              CNNMoney, 148Apps, AppAdvice, TUAW, TheAppleGoogle and other
+              leading publications.
             </p>
           </div>
         </div>
@@ -205,8 +209,9 @@ export default function HomePage() {
               Acquisition/Installs
             </p>
             <p className='lead'>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
-              earum?
+              With the help of AI & Nuro Marketing our team finds out the best
+              crowd to target and results in getting more user and more App
+              installs.
             </p>
           </div>
           <div className='col-lg-6 col-md-6'>
@@ -215,8 +220,9 @@ export default function HomePage() {
               Increase your In-App Purchases
             </p>
             <p className='lead'>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
-              earum?
+              We are having team of highly experienced copyrighter, who work
+              along with developer to build best strategy to increase your
+              In-App Purchases.
             </p>
           </div>
         </div>
@@ -227,8 +233,9 @@ export default function HomePage() {
               Look
             </p>
             <p className='lead'>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
-              earum?
+              Highly experienced graphic deginer work in collabration with
+              Marketing mind to design give a professional look to your App
+              store listing.
             </p>
           </div>
           <div className='col-lg-6 col-md-6'>
@@ -237,15 +244,84 @@ export default function HomePage() {
               Complete Social Media Marketing
             </p>
             <p className='lead'>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
-              earum?
+              We handle your social media presence on Facebook, Twitter and
+              other platforms. Your App will be promoted across these platforms
+              to drive traffic & make it a brand.
             </p>
           </div>
         </div>
       </section>
       <Reviews />
       <Guarantee />
-      <PaymentModal />
+      {/* Payment Modal */}
+      <div
+        className='modal fade'
+        id='PaymentModal'
+        tabIndex='-1'
+        role='dialog'
+        aria-labelledby='exampleModalLabel'
+        aria-hidden='true'
+      >
+        <div className='modal-dialog' role='document'>
+          <div className='modal-content'>
+            <div className='modal-header'>
+              <h5 className='modal-title' id='exampleModalLabel'>
+                Payment - limited time offer!
+              </h5>
+              <button
+                type='button'
+                className='close'
+                data-dismiss='modal'
+                aria-label='Close'
+              >
+                <span aria-hidden='true'>&times;</span>
+              </button>
+            </div>
+            <div className='modal-body'>
+              <form>
+                <div className='form-group'>
+                  <label htmlFor='recipient-name' className='col-form-label'>
+                    Full Name:
+                  </label>
+                  <input
+                    type='text'
+                    className='form-control'
+                    id='recipient-name'
+                    placeholder='John Doe'
+                  />
+                </div>
+                <div className='form-group'>
+                  <label htmlFor='recipient-name' className='col-form-label'>
+                    Email-Id:
+                  </label>
+                  <input
+                    type='email'
+                    placeholder='email@company.com'
+                    className='form-control'
+                    id='recipient-name'
+                  />
+                </div>
+                <div className='form-group'>
+                  <label htmlFor='recipient-name' className='col-form-label'>
+                    App URL:
+                  </label>
+                  <input
+                    type='text'
+                    className='form-control'
+                    id='recipient-name'
+                    placeholder='https://'
+                  />
+                </div>
+              </form>
+            </div>
+            <div className='modal-footer'>
+              <button type='button' className='btn btn-primary'>
+                Checkout
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

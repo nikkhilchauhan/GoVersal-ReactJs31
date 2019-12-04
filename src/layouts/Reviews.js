@@ -7,18 +7,17 @@ export default function Reviews() {
         <div className='col-lg-4 col-md-4'>
           <div className='bg-dark p-3 mb-2'>
             <p>
-              I was able to sell 100 copies of one ebook on the first night…
-              which created a snowball effect leading to even more sales.”
+              I was able to increase my In-App purchases by 48%… which created a
+              snowball effect leading to even more sales.”
             </p>
-            <p>- PATRIC MORGAN (Author and Blogger)</p>
+            <p>- PATRIC MORGAN (Founder ScanToSheeet)</p>
           </div>
           <div className='bg-blue p-3 mb-2'>
             <p>
               I’m no longer spending a large amount of money on ads that may or
-              may not work. I’m logging into Crowdfire and finding customers who
-              are already interested in what I’m selling. These customers are
-              liking, commenting, engaging, visiting my site, and buying! A 100%
-              increase in sales!”
+              may not work. It helped me to build my brand & got more
+              acquisition. These customers are liking, commenting, engaging,
+              visiting my app, and buying! A 100% increase in sales!”
             </p>
             <p>- LAURA (Boutiqueestella Owner)</p>
           </div>
@@ -26,39 +25,38 @@ export default function Reviews() {
         <div className='col-lg-4 col-md-4'>
           <div className='bg-blue p-3 mb-2'>
             <p>
-              Crowdfire’s Advanced Analytics is detailed and easy to understand.
-              The ease with which I can access the data for all the Social
-              accounts at one place makes it worthwhile"
+              GoVersal’s Advanced Analytics is detailed and easy to understand.
+              The ease with which I can access the data and understand what our
+              users want"
             </p>
-            <p>- ALEXANDRE AUGRAIN (Digital Marketer)</p>
+            <p>- ALEXANDRE AUGRAIN (App Developer)</p>
           </div>
           <div className='bg-dark p-3 mb-2'>
             <p>
-              Within months of kickstarting our marketing with Crowdfire, we
-              (saw) a 300% growth in visitors to our website and a 200% increase
-              in ad revenue. It gives immense earning potential by sharing your
-              content with your target audience…all it takes is five minutes
-              everyday!"
+              Within months of kickstarting our marketing with GoVersal, we
+              (saw) a 300% growth in visitors to our App and a 200% increase in
+              ad revenue. It gives immense earning potential by sharing your
+              content with your target audience…super helpful!"
             </p>
-            <p>- JAY CARTERÉ (Singer and Producer)</p>
+            <p>- JAY CARTERÉ (Founder OneStopTech)</p>
           </div>
         </div>
         <div className='col-lg-4 col-md-4'>
           <div className='bg-dark p-3 mb-2'>
             <p>
-              Crowdfire helped me get more listeners for my music by driving
-              traffic to my Youtube channel. Within 6 months of kickstarting my
-              marketing efforts, I reached nearly 20,000 new people."
+              GoVersal helped me get more listeners for my music app by driving
+              traffic to my App. Within 2 months of kickstarting my marketing
+              efforts, I reached nearly 20,000 new people."
             </p>
-            <p>- KYLE ZUVELLA (Founder The Faraway Guide)</p>
+            <p>- KYLE ZUVELLA (Founder TheFaraway)</p>
           </div>
           <div className='bg-blue p-3 mb-5'>
             <p>
-              Crowdfire has really helped me share my work with the right crowd.
+              GoVersal has really helped me share my work with the right crowd.
               It gives you the perfect overview of everything you need to know
               and makes the whole process so much faster and easier for you."
             </p>
-            <p>- NINA (Illustrator and Freelance Designer)</p>
+            <p>- NINA (Entrepreneur)</p>
           </div>
         </div>
       </div>

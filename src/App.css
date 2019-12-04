@@ -84,13 +84,21 @@ a:hover {
   padding: 0px 100px;
 }
 #pricing-table .card {
-  height: 440px;
+  height: 460px;
 }
 .text-price {
   color: #ffb273;
   font-size: 42px;
   font-weight: bold;
   font-family: Roboto;
+}
+.text-price-cut {
+  color: #cc2029;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: Roboto;
+  text-decoration: line-through;
+  margin-top: -16px;
 }
 .text-flat-fee {
   color: #f0dea7;
@@ -237,4 +245,8 @@ a:hover {
 #contact-form textarea:focus {
   outline: none;
   border-color: #f7c08a;
+}
+/* Footer */
+#footer img {
+  width: 200px;
 }

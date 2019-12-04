@@ -1,6 +1,7 @@
 import React from 'react';
 import PaypalTrust from '../img/paypal-trust.png';
 import { Link } from 'react-router-dom';
+import Logo from '../img/logo-white.png';
 
 export default function Footer() {
   return (
@@ -8,17 +9,23 @@ export default function Footer() {
       <div className='container py-3'>
         <div className='row text-center text-white'>
           <div className='col-lg-6 col-md-6'>
-            <h5>Who are we?</h5>
+            <img src={Logo} alt='GoVersal' />
             <p className='px-5'>
-              We are a bunch of extremely passionate people who live and breathe
-              Apps. Our expert marketing team will help your Apps get the
-              coverage by promoting them the right way.
+              We work alongside brands and apps to elevate them to the top
+              charts through data-driven user acquisition & vigorous split
+              testing system. Our mission is to leverage technology and data
+              science to maximize your app’s organic users.
             </p>
           </div>
           <div className='col-lg-6 col-md-6'>
             <h5>Quick Links</h5>
             <div className='px-5'>
               <ul>
+                <li>
+                  <Link to='/about' className='text-white'>
+                    About Us
+                  </Link>
+                </li>
                 <li>
                   <Link to='/contact' className='text-white'>
                     Contact Us

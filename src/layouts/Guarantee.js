@@ -10,10 +10,11 @@ export default function Guarantee() {
           <hr />
         </div>
       </div>
-      <div className='row text-center'>
+      <div className='row '>
         <div className='col-lg-6 div-col-md-6'>
           <p>
-            <img src={TickIcon} alt='Tick' /> We offer Money Back Guarantee.
+            <img src={TickIcon} alt='Tick' /> Marketing - for the success of
+            your app.
           </p>
           <p>
             <img src={TickIcon} alt='Tick' /> App marketing with maximum reach.
@@ -27,6 +28,19 @@ export default function Guarantee() {
           <p>
             <img src={TickIcon} alt='Tick' /> Customer satisfaction - our #1
             priority.
+          </p>
+        </div>
+      </div>
+      <div className='row'>
+        <div className='col-lg-6 div-col-md-6'>
+          <p>
+            <img src={TickIcon} alt='Tick' /> We offer Money Back Guarantee.
+          </p>
+        </div>
+        <div className='col-lg-6 div-col-md-6'>
+          <p>
+            <img src={TickIcon} alt='Tick' /> Goal-oriented plan for App
+            Enhancement.
           </p>
         </div>
       </div>
