@@ -1,22 +1,240 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  font-family: 'Roboto' sans-serif;
+  line-height: 1.4;
+}
+p {
+  padding: 6px 0 11px;
+  margin: 0 0 10px;
 }
 
-.App-logo {
-  height: 40vmin;
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Utility Classes */
+.text-primary {
+  color: #cc2029;
+}
+.bg-dark {
+  background: #333;
+}
+.bg-blue {
+  background: #22354b;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: #cc2029;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+.card {
+  border-radius: 7px;
+}
+/* Navbar */
+/* .container {
+  margin: auto;
+  max-width: 1250px;
+  overflow: auto;
+  padding: 0 20px;
+} */
+#navbar {
+  position: sticky;
+  top: 0;
+  background: #f8f9fa;
+  z-index: 1;
+}
+#navbar img {
+  width: 150px;
+}
+
+#navbar ul li a {
+  color: #000;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+  font-weight: bold;
+}
+
+#navbar ul li a:hover {
+  background: #cc2029;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* HomePage Pricing */
+#pricing-table {
+  padding: 0px 100px;
+}
+#pricing-table .card {
+  height: 440px;
+}
+.text-price {
+  color: #ffb273;
+  font-size: 42px;
+  font-weight: bold;
+  font-family: Roboto;
+}
+.text-flat-fee {
+  color: #f0dea7;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: -20px;
+  margin-bottom: -8px;
+}
+.text-package-content {
+  font-family: 'Bree Serif', serif;
+  color: #fff;
+  font-size: 16px;
+}
+.btn-get-now-1 {
+  background: #3893c8;
+  color: #fff;
+  border-radius: 7px;
+  height: 40px;
+  width: 150px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+.btn-get-now-2 {
+  background: #7ab436;
+  color: #fff;
+  border-radius: 7px;
+  height: 40px;
+  width: 150px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+.btn-get-now-3 {
+  background: #ae87c4;
+  color: #fff;
+  border-radius: 7px;
+  height: 40px;
+  width: 150px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+.btn-get-now a {
+  color: #fff;
+  font-size: 28px;
+}
+
+.l-heading {
+  font-size: 44px;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+  font-family: 'Lobster Two', cursive;
+}
+
+/* Top Brands */
+
+.brand-items {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+}
+#trusted-by-top-brands h1 {
+  font-size: 22px;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
 }
 
-.App-link {
-  color: #09d3ac;
+#trusted-by-top-brands .brand-item img {
+  width: 60px;
+}
+
+/* Explaination */
+#explaination .explain-heading {
+  display: flex;
+  font-family: 'Bree Serif', serif;
+  font-size: 22px;
+}
+
+#explaination h1 {
+  font-size: 38px;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+  font-family: 'Bree Serif', serif;
+}
+#explaination .lead {
+  margin-top: -40px;
+  padding-left: 55px;
+}
+#explaination .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #22354b;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+/* Reviews */
+.bg-review-1 {
+  background: #3893c8;
+}
+.bg-review-2 {
+  background: #ae87c4;
+}
+.bg-review-3 {
+  background: #333;
+}
+
+/* Goversal Guarantee */
+#goversal-guarantee h1 {
+  font-size: 38px;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+  font-family: 'Bree Serif', serif;
+}
+
+#goversal-guarantee .heading {
+  display: flex;
+  font-family: 'Bree Serif', serif;
+  font-size: 22px;
+}
+
+/* Contact Form */
+#contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+
+#contact-form textarea {
+  height: 150px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: #f7c08a;
 }
