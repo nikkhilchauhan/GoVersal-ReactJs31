@@ -13,8 +13,15 @@ import AboutPage from './pages/AboutPage';
 import TrackPage from './pages/TrackPage';
 import ContactPage from './pages/ContactPage';
 import Footer from './layouts/Footer';
+import firebase from './Firebase';
 
 function App() {
+  firebase
+    .firestore()
+    .collection('Traffic-To-Website')
+    .add({
+      Traffic: '1'
+    });
   return (
     <Router>
       <Navbar />

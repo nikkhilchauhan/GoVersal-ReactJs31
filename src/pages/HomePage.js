@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Reviews from '../layouts/Reviews';
 import BrandScan from '../img/brand/scantosheet.webp';
@@ -8,8 +8,115 @@ import BrandTouchvpn from '../img/brand/touchvpn.webp';
 import BrandRush from '../img/brand/rush.webp';
 import BrandPass from '../img/brand/passwordgen.webp';
 import Guarantee from '../layouts/Guarantee';
+import firebase from '../Firebase';
 
 export default function HomePage() {
+  const [fullName, setFullName] = useState('');
+  const [emailId, setEmailId] = useState('');
+  const [appUrl, setAppUrl] = useState('');
+  const [packageBrought, setPackageBrought] = useState();
+
+  const product = {
+    price: packageBrought,
+    name: 'Goversal - ' + packageBrought + ' Package',
+    description: 'Make your App successful'
+  };
+
+  function PayPal({ product }) {
+    const [paidFor, setPaidFor] = useState(false);
+    const [error, setError] = useState(null);
+    const paypalRef = useRef();
+
+    useEffect(() => {
+      window.paypal
+        .Buttons({
+          createOrder: (data, actions) => {
+            return actions.order.create({
+              purchase_units: [
+                {
+                  description: product.description,
+                  amount: {
+                    currency_code: 'USD',
+                    value: product.price
+                  }
+                }
+              ]
+            });
+          },
+          onApprove: async (data, actions) => {
+            setPaidFor(true);
+            Checkout();
+          },
+          onError: err => {
+            setError(err);
+            Checkout();
+          }
+        })
+        .render(paypalRef.current);
+    }, [product.description, product.price]);
+
+    if (paidFor) {
+      return (
+        <div>
+          <h5>
+            Congrats, our team will get in touch with you within 8-12 hrs.
+          </h5>
+        </div>
+      );
+    }
+
+    return (
+      <div>
+        {error && <div>Uh oh, an error occurred! {error.message}</div>}
+        <div ref={paypalRef} />
+      </div>
+    );
+  }
+
+  const GetItNowOne = () => {
+    setPackageBrought(199);
+    firebase
+      .firestore()
+      .collection('199-Package-Clicked')
+      .add({
+        Clicked: '199'
+      });
+  };
+  const GetItNowTwo = () => {
+    setPackageBrought(599);
+    firebase
+      .firestore()
+      .collection('599-Package-Clicked')
+      .add({
+        Clicked: '599'
+      });
+  };
+  const GetItNowThree = () => {
+    setPackageBrought(999);
+    firebase
+      .firestore()
+      .collection('999-Package-Clicked')
+      .add({
+        Clicked: '599'
+      });
+  };
+  const Checkout = () => {
+    if (fullName === '' || emailId === '' || appUrl === '') {
+      alert('Please fill all required fields!...');
+    } else {
+      firebase
+        .firestore()
+        .collection('Checkout')
+        .add({
+          Name: fullName,
+          Email: emailId,
+          AppUrl: appUrl,
+          PackageBrought: packageBrought
+        });
+      setFullName('');
+      setEmailId('');
+    }
+  };
   return (
     <div>
       <section className='container mt-5'>
@@ -33,6 +140,7 @@ export default function HomePage() {
                 data-toggle='modal'
                 data-target='#PaymentModal'
                 data-whatever='@mdo'
+                onClick={GetItNowOne}
               >
                 <Link to='/'>Get it now!</Link>
               </div>
@@ -66,6 +174,7 @@ export default function HomePage() {
                 data-toggle='modal'
                 data-target='#PaymentModal'
                 data-whatever='@mdo'
+                onClick={GetItNowTwo}
               >
                 <Link to='/'>Get it now!</Link>
               </div>
@@ -108,6 +217,7 @@ export default function HomePage() {
                 data-toggle='modal'
                 data-target='#PaymentModal'
                 data-whatever='@mdo'
+                onClick={GetItNowThree}
               >
                 <Link to='/'>Get it now!</Link>
               </div>
@@ -281,43 +391,50 @@ export default function HomePage() {
               <form>
                 <div className='form-group'>
                   <label htmlFor='recipient-name' className='col-form-label'>
-                    Full Name:
+                    Full Name*
                   </label>
                   <input
                     type='text'
                     className='form-control'
                     id='recipient-name'
                     placeholder='John Doe'
+                    onChange={e => {
+                      setFullName(e.target.value);
+                    }}
                   />
                 </div>
                 <div className='form-group'>
                   <label htmlFor='recipient-name' className='col-form-label'>
-                    Email-Id:
+                    Email-Id*
                   </label>
                   <input
                     type='email'
                     placeholder='email@company.com'
                     className='form-control'
                     id='recipient-name'
+                    onChange={e => {
+                      setEmailId(e.target.value);
+                    }}
                   />
                 </div>
                 <div className='form-group'>
                   <label htmlFor='recipient-name' className='col-form-label'>
-                    App URL:
+                    App URL*
                   </label>
                   <input
                     type='text'
                     className='form-control'
                     id='recipient-name'
                     placeholder='https://'
+                    onChange={e => {
+                      setAppUrl(e.target.value);
+                    }}
                   />
                 </div>
               </form>
             </div>
-            <div className='modal-footer'>
-              <button type='button' className='btn btn-primary'>
-                Checkout
-              </button>
+            <div className='px-5'>
+              <PayPal product={product} />
             </div>
           </div>
         </div>
