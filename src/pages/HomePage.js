@@ -191,7 +191,7 @@ export default function HomePage() {
                 <br />
                 ~ Guaranteed 25 App Reviews
                 <br />
-                ~ 1 Video Reviews/Demos
+                ~ 1 Video Review/Demo
                 <br />
                 ~ Professional App Screenshot Design
                 <br />
@@ -295,7 +295,7 @@ export default function HomePage() {
               Ranking
             </p>
             <p className='lead'>
-              With complex Machine Learning Alorithms & leading analytical
+              With complex Machine Learning Algorithms & leading analytical
               tools, our team works on store Optimization for your App
               constantly to see how the App ranks.
             </p>
@@ -330,7 +330,7 @@ export default function HomePage() {
               Increase your In-App Purchases
             </p>
             <p className='lead'>
-              We are having team of highly experienced copyrighter, who work
+              We are having team of highly experienced copywriter, who work
               along with developer to build best strategy to increase your
               In-App Purchases.
             </p>
@@ -343,9 +343,9 @@ export default function HomePage() {
               Look
             </p>
             <p className='lead'>
-              Highly experienced graphic deginer work in collabration with
-              Marketing mind to design give a professional look to your App
-              store listing.
+              Highly experienced graphic designer work in collaboration with
+              marketing mind to give a professional design to your app store
+              listings.
             </p>
           </div>
           <div className='col-lg-6 col-md-6'>

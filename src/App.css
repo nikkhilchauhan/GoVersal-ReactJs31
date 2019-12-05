@@ -116,8 +116,6 @@ a:hover {
   background: #3893c8;
   color: #fff;
   border-radius: 7px;
-  height: 40px;
-  width: 150px;
   font-weight: bold;
   margin: 0 auto;
 }
@@ -125,8 +123,6 @@ a:hover {
   background: #7ab436;
   color: #fff;
   border-radius: 7px;
-  height: 40px;
-  width: 150px;
   font-weight: bold;
   margin: 0 auto;
 }
@@ -134,14 +130,13 @@ a:hover {
   background: #ae87c4;
   color: #fff;
   border-radius: 7px;
-  height: 40px;
-  width: 150px;
   font-weight: bold;
   margin: 0 auto;
 }
 .btn-get-now a {
   color: #fff;
   font-size: 28px;
+  padding: 12px 14px;
 }
 
 .l-heading {
@@ -171,17 +166,16 @@ a:hover {
 #explaination .explain-heading {
   display: flex;
   font-family: 'Bree Serif', serif;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 #explaination h1 {
   font-size: 38px;
   margin-bottom: 0.75rem;
-  line-height: 1.1;
   font-family: 'Bree Serif', serif;
 }
 #explaination .lead {
-  margin-top: -40px;
+  margin-top: -32px;
   padding-left: 55px;
 }
 #explaination .icon {
