@@ -74,30 +74,30 @@ export default function HomePage() {
   }
 
   const GetItNowOne = () => {
-    setPackageBrought(199);
+    setPackageBrought(79);
     firebase
       .firestore()
-      .collection('199-Package-Clicked')
+      .collection('79-Package-Clicked')
       .add({
-        Clicked: '199'
+        Clicked: '79'
       });
   };
   const GetItNowTwo = () => {
-    setPackageBrought(599);
+    setPackageBrought(179);
     firebase
       .firestore()
-      .collection('599-Package-Clicked')
+      .collection('179-Package-Clicked')
       .add({
-        Clicked: '599'
+        Clicked: '179'
       });
   };
   const GetItNowThree = () => {
-    setPackageBrought(999);
+    setPackageBrought(279);
     firebase
       .firestore()
-      .collection('999-Package-Clicked')
+      .collection('279-Package-Clicked')
       .add({
-        Clicked: '599'
+        Clicked: '279'
       });
   };
   const Checkout = () => {
@@ -132,9 +132,9 @@ export default function HomePage() {
           {/* Pricing Table-1 */}
           <div className='col-lg-4 col-md-8 mb-2'>
             <div className='card bg-dark'>
-              <h1 className='text-price'>$199</h1>
-              <h1 className='text-price-cut'>$269</h1>
-              <p className='text-flat-fee'>Flat fee</p>
+              <h1 className='text-price'>$79</h1>
+              <h1 className='text-price-cut'>$99</h1>
+              <p className='text-flat-fee'>Delivery 7-10 days</p>
               <div
                 className='btn-get-now-1 btn-get-now'
                 data-toggle='modal'
@@ -146,29 +146,23 @@ export default function HomePage() {
               </div>
 
               <p className='text-package-content'>
-                ~ Press Release
+                ~ Textual App Review
                 <br />
                 ~ App Description Copywriting
                 <br />
-                ~ Guaranteed 5 App Reviews
+                ~ Keyword Research & Integration
                 <br />
-                ~ Complete Analysis of App
-                <br />
-                ~ 500 Organic Twitter Followers
-                <br />
-                ~ 500 Organic Facebook Fans
-                <br />
-                ~ Live Extensive reporting
-                <b />
+                ~ Complete Analysis of your App
+                <br />~ Live Extensive Reporting
               </p>
             </div>
           </div>
           {/* Pricing Table-2 */}
           <div className='col-lg-4 col-md-8 mb-2'>
             <div className='card bg-dark'>
-              <h1 className='text-price'>$599</h1>
-              <h1 className='text-price-cut'>$769</h1>
-              <p className='text-flat-fee'>Flat fee</p>
+              <h1 className='text-price'>$179</h1>
+              <h1 className='text-price-cut'>$199</h1>
+              <p className='text-flat-fee'>Delivery 15-20 days</p>
               <div
                 className='btn-get-now-2 btn-get-now'
                 data-toggle='modal'
@@ -181,37 +175,27 @@ export default function HomePage() {
               <p className='text-package-content'>
                 ~ Press Release
                 <br />
-                ~ Keyword Research
+                ~ Submission to 15+ sites
                 <br />
-                ~ UI/UX Testing On 20+ Devices
+                ~ Texual App Review
+                <br />
+                ~ Keyword Research & Integration
                 <br />
                 ~ App Description Copywriting
                 <br />
-                ~ Submission to 10+ sites
+                ~ Complete Analysis of your App
                 <br />
-                ~ Guaranteed 25 App Reviews
-                <br />
-                ~ 1 Video Review/Demo
-                <br />
-                ~ Professional App Screenshot Design
-                <br />
-                ~ Complete Analysis of App
-                <br />
-                ~ 1000 Organic Twitter Followers
-                <br />
-                ~ 1000 Organic Facebook Fans
-                <br />
-                ~ Live Extensive reporting
-                <br />
+                ~ Automated UI/UX & Performance Testing
+                <br />~ Live Extensive reporting
               </p>
             </div>
           </div>
           {/* Pricing Table-3 */}
           <div className='col-lg-4 col-md-8'>
             <div className='card bg-dark'>
-              <h1 className='text-price'>$999</h1>
-              <h1 className='text-price-cut'>$1,069</h1>
-              <p className='text-flat-fee'>Flat fee</p>
+              <h1 className='text-price'>$279</h1>
+              <h1 className='text-price-cut'>$349</h1>
+              <p className='text-flat-fee'>Delivery 25-30 days</p>
               <div
                 className='btn-get-now-3 btn-get-now'
                 data-toggle='modal'
@@ -224,29 +208,27 @@ export default function HomePage() {
               <p className='text-package-content'>
                 ~ Press Release
                 <br />
-                ~ App Description Copywriting
+                ~ Submission to 35+ sites
                 <br />
-                ~ UI/UX Testing On 35+ Devices
+                ~ App Walkthrough Video(2-3 mins)
+                <br />
+                ~ Dedicated Email Campaign(5000 subscriber)
+                <br />
+                ~ Landing Page Design & Development
+                <br />
+                ~ Texual App Review
                 <br />
                 ~ Professional App Screenshot Design
                 <br />
-                ~ Guaranteed 45 App Reviews
+                ~ Keyword Research & Integration
                 <br />
-                ~ Submission to 25+ sites
+                ~ App Description Copywriting
                 <br />
-                ~ 2 Video Reviews/Demos
+                ~ Complete Analysis of your App
                 <br />
-                ~ Complete Analysis of App
+                ~ Automated UI/UX & Performance Testing
                 <br />
-                ~ Advertising on Targetted Sites
-                <br />
-                ~ Banner Ad Design
-                <br />
-                ~ Website Design &amp; Development
-                <br />
-                ~ 3000 Organic Twitter Followers
-                <br />
-                ~ 3000 Organic Facebook Fans
+                ~ CEO Interview/Success Story(500-600 words)
                 <br />~ Live Extensive reporting
               </p>
             </div>

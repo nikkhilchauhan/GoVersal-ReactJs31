@@ -84,7 +84,7 @@ a:hover {
   padding: 0px 35px;
 }
 #pricing-table .card {
-  height: 460px;
+  height: 510px;
 }
 .text-price {
   color: #ffb273;
@@ -111,6 +111,7 @@ a:hover {
   font-family: 'Bree Serif', serif;
   color: #fff;
   font-size: 16px;
+  line-height: 26px;
 }
 .btn-get-now-1 {
   background: #3893c8;
