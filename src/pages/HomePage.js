@@ -74,15 +74,6 @@ export default function HomePage() {
   }
 
   const GetItNowOne = () => {
-    setPackageBrought(79);
-    firebase
-      .firestore()
-      .collection('79-Package-Clicked')
-      .add({
-        Clicked: '79'
-      });
-  };
-  const GetItNowTwo = () => {
     setPackageBrought(179);
     firebase
       .firestore()
@@ -91,13 +82,22 @@ export default function HomePage() {
         Clicked: '179'
       });
   };
-  const GetItNowThree = () => {
+  const GetItNowTwo = () => {
     setPackageBrought(279);
     firebase
       .firestore()
       .collection('279-Package-Clicked')
       .add({
         Clicked: '279'
+      });
+  };
+  const GetItNowThree = () => {
+    setPackageBrought(479);
+    firebase
+      .firestore()
+      .collection('479-Package-Clicked')
+      .add({
+        Clicked: '479'
       });
   };
   const Checkout = () => {
@@ -132,9 +132,9 @@ export default function HomePage() {
           {/* Pricing Table-1 */}
           <div className='col-lg-4 col-md-8 mb-2'>
             <div className='card bg-dark'>
-              <h1 className='text-price'>$79</h1>
-              <h1 className='text-price-cut'>$99</h1>
-              <p className='text-flat-fee'>Delivery 7-10 days</p>
+              <h1 className='text-price'>$179</h1>
+              <h1 className='text-price-cut'>$199</h1>
+              <p className='text-flat-fee'>Delivery 3-5 days</p>
               <div
                 className='btn-get-now-1 btn-get-now'
                 data-toggle='modal'
@@ -160,9 +160,9 @@ export default function HomePage() {
           {/* Pricing Table-2 */}
           <div className='col-lg-4 col-md-8 mb-2'>
             <div className='card bg-dark'>
-              <h1 className='text-price'>$179</h1>
-              <h1 className='text-price-cut'>$199</h1>
-              <p className='text-flat-fee'>Delivery 15-20 days</p>
+              <h1 className='text-price'>$279</h1>
+              <h1 className='text-price-cut'>$349</h1>
+              <p className='text-flat-fee'>Delivery 10-15 days</p>
               <div
                 className='btn-get-now-2 btn-get-now'
                 data-toggle='modal'
@@ -193,9 +193,9 @@ export default function HomePage() {
           {/* Pricing Table-3 */}
           <div className='col-lg-4 col-md-8'>
             <div className='card bg-dark'>
-              <h1 className='text-price'>$279</h1>
-              <h1 className='text-price-cut'>$349</h1>
-              <p className='text-flat-fee'>Delivery 25-30 days</p>
+              <h1 className='text-price'>$479</h1>
+              <h1 className='text-price-cut'>$599</h1>
+              <p className='text-flat-fee'>Delivery 20-25 days</p>
               <div
                 className='btn-get-now-3 btn-get-now'
                 data-toggle='modal'
